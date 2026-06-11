@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio d'Ange Herimanana - Étudiant L2 HEI, Futur Data Analyst">
-    <meta name="theme-color" content="#0c0a09">
-    <title>Ange Herimanana | Portfolio</title>
+    <meta name="theme-color" content="#0d0b0a">
+    <title>Ange Herimanana &mdash; Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
     <header class="navbar" id="navbar">
-        <nav class="navbar-container" role="navigation" aria-label="Navigation principale">
-            <div class="navbar-brand">
-                <div class="brand-dot"></div>
-                <span class="logo-text">Ange<span class="accent">.</span></span>
-            </div>
-
+        <nav class="navbar-container">
+            <a href="#hero" class="navbar-brand">
+                <img src="./photo/photo.png" alt="Ange Herimanana" class="navbar-avatar" id="navbarAvatar">
+                <div class="navbar-brand-text">
+                    <span class="navbar-brand-name">Ange Herimanana</span>
+                    <span class="navbar-brand-title">Data Analyst &bull; HEI L2</span>
+                </div>
+            </a>
             <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
-
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">À propos</a></li>
-                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#about" class="nav-link">&Agrave; propos</a></li>
+                <li><a href="#skills" class="nav-link">Comp&eacute;tences</a></li>
                 <li><a href="#parcours" class="nav-link">Parcours</a></li>
                 <li><a href="#projects" class="nav-link">Projets</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -35,135 +34,114 @@
     </header>
 
     <section id="hero" class="hero">
-        <div class="hero-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-
-        <div class="hero-content">
-            <div class="hero-greeting">
-                <span class="wave">👋</span>
-                Salut, moi c'est
-            </div>
-            <h1 class="hero-name">
-                <span class="gradient-text">Ange Herimanana</span>
-            </h1>
-            <p class="hero-title">
-                <strong>Data Analyst</strong> en devenir · Étudiant <strong>L2</strong> à <strong>HEI</strong>
-            </p>
-            <p class="hero-description">
-                Passionné par les données, la résolution de problèmes et la création de solutions qui ont du sens. Je transforme des idées en projets concrets.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    Voir mes projets <i class="fa-solid fa-arrow-down"></i>
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    Me contacter <i class="fa-regular fa-paper-plane"></i>
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <div class="hero-stat-number">2+</div>
-                    <div class="hero-stat-label">Projets</div>
+        <div class="hero-bg"></div>
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <div class="hero-tag">
+                    <span class="dot"></span>
+                    Disponible pour des projets
                 </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">L2</div>
-                    <div class="hero-stat-label">Année HEI</div>
+                <h1 class="hero-name">
+                    Ange <span class="hl">Herimanana</span>
+                </h1>
+                <p class="hero-sub">
+                    <strong>Data Analyst</strong> en devenir &middot; L2 &agrave; <strong>HEI</strong>
+                </p>
+                <p class="hero-desc">
+                    Passionn&eacute; par les donn&eacute;es et la r&eacute;solution de probl&egrave;mes,
+                    je transforme des id&eacute;es en solutions concregrave;tes.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-folder-open"></i> Mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Me contacter <i class="fa-regular fa-paper-plane"></i>
+                    </a>
                 </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">9</div>
-                    <div class="hero-stat-label">Technologies</div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-photo-frame">
+                    <img src="./photo/photo.png" alt="Ange Herimanana">
+                </div>
+                <div class="hero-status">
+                    <span class="hero-status-dot"></span>
+                    <div>
+                        <p>&Eacute;tudiant HEI</p>
+                        <span>L2 &middot; Data</span>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="hero-scroll">
-            <span>Découvrir</span>
-            <div class="scroll-line"></div>
+        <div class="hero-meta">
+            <div class="hero-meta-item">
+                <div class="num">2+</div>
+                <div class="lbl">Projets</div>
+            </div>
+            <div class="hero-meta-item">
+                <div class="num">L2</div>
+                <div class="lbl">Ann&eacute;e</div>
+            </div>
+            <div class="hero-meta-item">
+                <div class="num">9</div>
+                <div class="lbl">Technos</div>
+            </div>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <div class="section-label">
-                <i class="fa-regular fa-user"></i> Qui suis-je ?
-            </div>
-            <h2 class="section-title">
-                <span class="highlight">Derrière le code</span>
-            </h2>
-            <p class="section-subtitle">
-                Un étudiant malgache passionné, qui construit son avenir pixel par pixel, donnée par donnée.
-            </p>
-
-            <div class="about-inner">
-                <div class="about-text">
-                    <span class="greeting">📍 Madagascar</span>
-                    <h3>
-                        Étudiant en <span class="highlight">L2</span> à la
-                        Haute École d'Informatique
-                    </h3>
-                    <p>
-                        Je m'appelle <strong>Ange Herimanana</strong>, j'ai <strong>19 ans</strong> et je suis actuellement en
-                        <strong>deuxième année à HEI (Haute École d'Informatique)</strong> à Madagascar.
-                        Mon objectif ? Devenir <strong>Data Analyst</strong> et aider les entreprises à prendre
-                        de meilleures décisions grâce aux données.
-                    </p>
-                    <p>
-                        Ce qui me passionne vraiment, c'est de pouvoir <strong>raconter une histoire avec des chiffres</strong>.
-                        Derrière chaque dataset, il y a des tendances, des insights, des opportunités —
-                        et j'apprends chaque jour à mieux les déceler.
-                    </p>
-                    <p>
-                        En parallèle de mes études, je développe des projets concrets comme
-                        <strong>MyBudgetLocal</strong> et <strong>FitLife</strong>, qui allient
-                        développement web et analyse de données.
-                    </p>
-                    <div class="about-quote">
-                        « Les données sont le pétrole du XXIe siècle. Celui qui sait les analyser
-                        détient la clé du monde de demain. »
-                    </div>
+            <div class="section-header">
+                <div class="section-header-left">
+                    <div class="tag tag-amber"><em>01</em> &mdash; &Agrave; propos</div>
+                    <h2 class="section-title">Qui suis-<span class="hl">je</span> ?</h2>
                 </div>
-
-                <div class="about-cards">
-                    <div class="about-card">
-                        <div class="about-card-icon amber">
-                            <i class="fa-solid fa-graduation-cap"></i>
+                <div class="section-header-right">
+                    <div class="section-number">01</div>
+                </div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <span class="greet">&mdash; Salut &nbsp; <span style="font-size:1.4rem;">&#x1F44B;</span></span>
+                    <h3>&Eacute;tudiant en <span class="hl">L2</span> &agrave; la Haute &Eacute;cole d&rsquo;Informatique</h3>
+                    <p>
+                        Je m&rsquo;appelle <strong>Ange Herimanana</strong>, j&rsquo;ai <strong>19 ans</strong> et
+                        je suis actuellement en deuxi&egrave;me ann&eacute;e &agrave; <strong>HEI Madagascar</strong>.
+                        Mon ambition&nbsp;: devenir <strong>Data Analyst</strong> et aider les organisations &agrave;
+                        prendre de meilleures d&eacute;cisions gr&acirc;ce aux donn&eacute;es.
+                    </p>
+                    <p>
+                        Ce qui me passionne, c&rsquo;est de trouver des <strong>histoires cach&eacute;es dans les chiffres</strong>.
+                        Chaque dataset raconte quelque chose &mdash; j&rsquo;apprends chaque jour &agrave; mieux
+                        le comprendre.
+                    </p>
+                    <p>
+                        En parall&egrave;le, je construis des projets concrets comme
+                        <strong>MyBudgetLocal</strong> et <strong>FitLife</strong>,
+                        qui m&eacute;langent web et analyse de donn&eacute;es.
+                    </p>
+                </div>
+                <div>
+                    <div class="about-cards-grid">
+                        <div class="about-mini-card">
+                            <div class="icon amber"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <h4>HEI Madagascar</h4>
+                            <p>L2 &mdash; Informatique</p>
                         </div>
-                        <div class="about-card-content">
-                            <h4>HEI - L2</h4>
-                            <p>Haute École d'Informatique, Madagascar</p>
+                        <div class="about-mini-card">
+                            <div class="icon emerald"><i class="fa-solid fa-chart-line"></i></div>
+                            <h4>Data Analyst</h4>
+                            <p>Sp&eacute;cialisation</p>
                         </div>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon emerald">
-                            <i class="fa-solid fa-chart-simple"></i>
+                        <div class="about-mini-card">
+                            <div class="icon rose"><i class="fa-solid fa-location-dot"></i></div>
+                            <h4>Antananarivo</h4>
+                            <p>Madagascar</p>
                         </div>
-                        <div class="about-card-content">
-                            <h4>Spécialisation</h4>
-                            <p>Data Analyst & Développement Web</p>
-                        </div>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon rose">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="about-card-content">
-                            <h4>Basé à</h4>
-                            <p>Antananarivo, Madagascar</p>
-                        </div>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon teal">
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="about-card-content">
+                        <div class="about-mini-card">
+                            <div class="icon teal"><i class="fa-regular fa-compass"></i></div>
                             <h4>Objectif</h4>
-                            <p>Devenir un Data Analyst accompli</p>
+                            <p>Data Analyst accompli</p>
                         </div>
                     </div>
                 </div>
@@ -173,49 +151,42 @@
 
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-label">
-                <i class="fa-solid fa-code"></i> Mes outils
+            <div class="section-header">
+                <div class="section-header-left">
+                    <div class="tag tag-amber"><em>02</em> &mdash; Comp&eacute;tences</div>
+                    <h2 class="section-title">Ma <span class="hl">Stack</span></h2>
+                </div>
+                <div class="section-header-right">
+                    <div class="section-number">02</div>
+                </div>
             </div>
-            <h2 class="section-title">
-                <span class="highlight">Stack Technique</span>
-            </h2>
-            <p class="section-subtitle">
-                Les technologies et langages que j'utilise au quotidien pour construire et analyser.
-            </p>
-
             <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fa-solid fa-window-maximize" style="color: var(--amber);"></i>
-                    </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon dev"><i class="fa-solid fa-window-maximize"></i></div>
                     <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge">HTML5</span>
-                        <span class="skill-badge">CSS3</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">React</span>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fa-solid fa-database" style="color: var(--emerald);"></i>
-                    </div>
-                    <h3>Backend & Data</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">PostgreSQL</span>
-                        <span class="skill-badge">Java</span>
+                <div class="skill-card">
+                    <div class="skill-card-icon data"><i class="fa-solid fa-database"></i></div>
+                    <h3>Backend &amp; Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Java</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fa-solid fa-brain" style="color: var(--rose);"></i>
-                    </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon core"><i class="fa-solid fa-brain"></i></div>
                     <h3>Fondamentaux</h3>
-                    <div class="skill-items">
-                        <span class="skill-badge">Algorithmique</span>
-                        <span class="skill-badge">Git / GitHub</span>
-                        <span class="skill-badge">Analyse de données</span>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Algorithmique</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Analyse de donn&eacute;es</span>
                     </div>
                 </div>
             </div>
@@ -224,51 +195,33 @@
 
     <section id="parcours" class="parcours">
         <div class="container">
-            <div class="section-label">
-                <i class="fa-solid fa-road"></i> Mon chemin
+            <div class="section-header">
+                <div class="section-header-left">
+                    <div class="tag tag-amber"><em>03</em> &mdash; Parcours</div>
+                    <h2 class="section-title">Mon <span class="hl">chemin</span></h2>
+                </div>
+                <div class="section-header-right">
+                    <div class="section-number">03</div>
+                </div>
             </div>
-            <h2 class="section-title">
-                Mon <span class="highlight">Parcours</span>
-            </h2>
-            <p class="section-subtitle">
-                Les étapes clés de mon parcours académique et professionnel.
-            </p>
-
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fa-solid fa-laptop-code"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="date">2025 - Aujourd'hui</div>
-                        <h4>L2 - Haute École d'Informatique (HEI)</h4>
-                        <p class="institute">Madagascar</p>
-                        <p>Spécialisation en développement logiciel et analyse de données. Projets concrets, travail en équipe et découverte du monde professionnel.</p>
-                    </div>
+                <div class="timeline-card">
+                    <div class="year">2025</div>
+                    <h4>L2 &agrave; HEI</h4>
+                    <div class="loc"><i class="fa-solid fa-location-dot"></i> Madagascar</div>
+                    <p>Sp&eacute;cialisation en d&eacute;veloppement logiciel et analyse de donn&eacute;es. Projets concrets et travail en &eacute;quipe.</p>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="date">2024 - 2025</div>
-                        <h4>L1 - Haute École d'Informatique (HEI)</h4>
-                        <p class="institute">Madagascar</p>
-                        <p>Première année d'études supérieures en informatique. Acquisition des bases en algorithmique, programmation et systèmes d'information.</p>
-                    </div>
+                <div class="timeline-card">
+                    <div class="year">2024</div>
+                    <h4>L1 &agrave; HEI</h4>
+                    <div class="loc"><i class="fa-solid fa-location-dot"></i> Madagascar</div>
+                    <p>Premi&egrave;re ann&eacute;e d&rsquo;&eacute;tudes sup&eacute;rieures. Bases en algorithmique, programmation et syst&egrave;mes d&rsquo;information.</p>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fa-solid fa-medal"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="date">2024</div>
-                        <h4>Baccalauréat</h4>
-                        <p class="institute">Madagascar</p>
-                        <p>Obtention du baccalauréat, série D (Scientifique).</p>
-                    </div>
+                <div class="timeline-card">
+                    <div class="year">2024</div>
+                    <h4>Baccalaur&eacute;at</h4>
+                    <div class="loc"><i class="fa-solid fa-location-dot"></i> Madagascar</div>
+                    <p>Obtention du Baccalaur&eacute;at, s&eacute;rie D (Scientifique).</p>
                 </div>
             </div>
         </div>
@@ -276,131 +229,109 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-label">
-                <i class="fa-solid fa-folder-open"></i> Mes réalisations
+            <div class="section-header">
+                <div class="section-header-left">
+                    <div class="tag tag-amber"><em>04</em> &mdash; Projets</div>
+                    <h2 class="section-title">Mes <span class="hl">r&eacute;alisations</span></h2>
+                </div>
+                <div class="section-header-right">
+                    <div class="section-number">04</div>
+                </div>
             </div>
-            <h2 class="section-title">
-                <span class="highlight">Projets</span> récents
-            </h2>
-            <p class="section-subtitle">
-                Des projets construits avec passion, du concept à la réalisation.
-            </p>
-
-            <div class="projects-grid">
-
+            <div class="projects-list">
                 <article class="project-card">
-                    <div class="project-tag amber">
-                        <i class="fa-solid fa-coins"></i> Application
+                    <div class="project-card-top">
+                        <h3>MyBudgetLocal <span>&#x1F4B0;</span></h3>
+                        <span class="badge badge-amber">Application</span>
                     </div>
-                    <h3>MyBudgetLocal <span class="project-emoji">💰</span></h3>
-                    <p class="project-description">
-                        Application de gestion budgétaire pour le suivi des revenus et dépenses
-                        dans un cadre familial et quotidien. Projet collaboratif avec des étudiants
-                        en Master 2 ISPM.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Git</span>
+                    <p class="project-desc">Gestion de budget pour le suivi des revenus et d&eacute;penses. Projet collaboratif avec des &eacute;tudiants en Master 2 ISPM.</p>
+                    <div class="project-tech-strip">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Git</span>
                     </div>
                     <ul class="project-features">
-                        <li><i class="fa-solid fa-chart-line"></i> Suivi des revenus et dépenses</li>
-                        <li><i class="fa-solid fa-file-invoice"></i> Génération de rapports financiers</li>
-                        <li><i class="fa-solid fa-users"></i> Collaboration avec Master 2 ISPM</li>
-                        <li><i class="fa-solid fa-mobile-screen"></i> Interface simple et intuitive</li>
+                        <li><i class="fa-solid fa-chart-line"></i> Suivi des revenus et d&eacute;penses</li>
+                        <li><i class="fa-solid fa-file-invoice"></i> G&eacute;n&eacute;ration de rapports</li>
+                        <li><i class="fa-solid fa-users"></i> Collaboration Master 2 ISPM</li>
+                        <li><i class="fa-solid fa-mobile-screen"></i> Interface intuitive</li>
                     </ul>
-                    <a href="https://github.com/Ange-H0610/ISPM.git" target="_blank" class="project-link">
+                    <a href="https://github.com/Ange-H0610/ISPM.git" target="_blank" class="btn btn-link">
                         Voir sur GitHub <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </article>
-
                 <article class="project-card">
-                    <div class="project-tag emerald">
-                        <i class="fa-solid fa-heart-pulse"></i> Plateforme
+                    <div class="project-card-top">
+                        <h3>FitLife <span>&#x1F3C3;&#x200D;&#x2640;&#xFE0F;</span></h3>
+                        <span class="badge badge-emerald">Plateforme</span>
                     </div>
-                    <h3>FitLife <span class="project-emoji">🏃‍♀️</span></h3>
-                    <p class="project-description">
-                        Plateforme de coaching alimentaire et de suivi physique pour adopter
-                        de meilleures habitudes de vie. Inspiré par une sensibilisation familiale
-                        aux maladies chroniques.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">React</span>
+                    <p class="project-desc">Plateforme de coaching alimentaire et suivi physique. Inspir&eacute;e par une sensibilisation aux maladies chroniques.</p>
+                    <div class="project-tech-strip">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
                     </div>
                     <ul class="project-features">
-                        <li><i class="fa-solid fa-apple-alt"></i> Conseils nutritionnels personnalisés</li>
-                        <li><i class="fa-solid fa-heartbeat"></i> Suivi d'activités physiques</li>
-                        <li><i class="fa-solid fa-chart-simple"></i> Évolution des objectifs santé</li>
-                        <li><i class="fa-solid fa-hand-holding-heart"></i> Inspiré par des cas réels</li>
+                        <li><i class="fa-solid fa-apple-alt"></i> Conseils nutritionnels</li>
+                        <li><i class="fa-solid fa-heartbeat"></i> Suivi d&rsquo;activit&eacute;s</li>
+                        <li><i class="fa-solid fa-chart-simple"></i> &Eacute;volution des objectifs</li>
+                        <li><i class="fa-solid fa-hand-holding-heart"></i> Sensibilisation sant&eacute;</li>
                     </ul>
-                    <a href="https://github.com/Ange-H0610/FitLife.git" target="_blank" class="project-link">
+                    <a href="https://github.com/Ange-H0610/FitLife.git" target="_blank" class="btn btn-link">
                         Voir sur GitHub <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </article>
-
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-label">
-                <i class="fa-regular fa-comment-dots"></i> Restons en contact
+            <div class="section-header">
+                <div class="section-header-left">
+                    <div class="tag tag-amber"><em>05</em> &mdash; Contact</div>
+                    <h2 class="section-title">Discutons <span class="hl">ensemble</span></h2>
+                </div>
+                <div class="section-header-right">
+                    <div class="section-number">05</div>
+                </div>
             </div>
-            <h2 class="section-title">
-                Discutons de vos <span class="highlight">projets</span>
-            </h2>
-            <p class="section-subtitle">
-                Une idée, un projet, une opportunité ? Je suis toujours partant pour échanger.
-            </p>
-
-            <div class="contact-content">
-                <div class="contact-methods">
-                    <a href="https://mail.google.com/mail/u/0/?view=cm&to=hei.iraka.4@gmail.com" target="_blank" class="contact-card" aria-label="Email">
-                        <div class="contact-card-icon">
-                            <i class="fa-regular fa-envelope"></i>
-                        </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&to=hei.iraka.4@gmail.com" target="_blank" class="contact-item">
+                        <div class="contact-item-ic"><i class="fa-regular fa-envelope"></i></div>
                         <div>
                             <h4>Email</h4>
                             <p>hei.iraka.4@gmail.com</p>
                         </div>
                     </a>
-
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
+                    <div class="contact-item">
+                        <div class="contact-item-ic"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
                             <h4>Localisation</h4>
                             <p>Madagascar</p>
                         </div>
                     </div>
-
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
+                    <div class="contact-item">
+                        <div class="contact-item-ic"><i class="fa-brands fa-github"></i></div>
                         <div>
                             <h4>GitHub</h4>
                             <p>@Ange-H0610</p>
                         </div>
                     </div>
                 </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
+                <form class="form-card" id="contactForm">
+                    <div class="form-row">
                         <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-row">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-row">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">
                         Envoyer <i class="fa-regular fa-paper-plane"></i>
@@ -412,7 +343,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>© 2026 - Ange Herimanana · Construit avec <span class="footer-heart">♥</span> depuis Madagascar</p>
+            <p>&copy; 2026 &mdash; Ange Herimanana &middot; Construit avec &hearts; depuis <span class="hl">Madagascar</span></p>
         </div>
     </footer>
 
