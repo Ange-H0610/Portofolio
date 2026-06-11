@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    document.querySelectorAll('.about-text-content p').forEach((el, index) => {
+    document.querySelectorAll('.about-text-content p, .about-text-content h3, .about-text-content .greet').forEach((el, index) => {
         el.classList.add('animation-slideInLeft');
         el.style.opacity = '0';
         el.style.animationDelay = `${index * 0.15}s`;
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.timeline-card').forEach((el, index) => {
         el.classList.add('animation-slideInUp');
         el.style.opacity = '0';
-        el.style.animationDelay = `${index * 0.15}s`;
+        el.style.animationDelay = `${index * 0.12}s`;
         observer.observe(el);
     });
 
