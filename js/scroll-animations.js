@@ -20,16 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    document.querySelectorAll('.hero-left > *').forEach((el, index) => {
+    document.querySelectorAll('.hero-grid > *').forEach((el, index) => {
         el.classList.add('animation-fadeInUp');
         el.style.opacity = '0';
         el.style.animationDelay = `${index * 0.12}s`;
-        observer.observe(el);
-    });
-
-    document.querySelectorAll('.hero-right').forEach((el) => {
-        el.classList.add('animation-scaleIn');
-        el.style.opacity = '0';
         observer.observe(el);
     });
 
