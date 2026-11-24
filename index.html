@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio d'Ange Herimanana - L2 HEI, Développeur d'applications numériques à impact social">
-    <meta name="theme-color" content="#0d0b0a">
+    <meta name="theme-color" content="#fafaf9">
     <title>Ange Herimanana — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -13,24 +16,32 @@
 
     <header class="navbar" id="navbar">
         <nav class="navbar-container">
-            <a href="#hero" class="navbar-brand">
-                <img src="./photo/photo.png" alt="Ange Herimanana" class="navbar-avatar">
-                <div class="navbar-brand-text">
-                    <span class="navbar-brand-name">Ange Herimanana</span>
-                    <span class="navbar-brand-title">Développeur · HEI L2</span>
-                </div>
-            </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">À propos</a></li>
-                <li><a href="#vision" class="nav-link">Vision</a></li>
-                <li><a href="#skills" class="nav-link">Compétences</a></li>
-                <li><a href="#parcours" class="nav-link">Parcours</a></li>
-                <li><a href="#projects" class="nav-link">Projets</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+            <div class="navbar-left">
+                <a href="#hero" class="navbar-brand">
+                    <img src="./photo/photo.png" alt="Ange Herimanana" class="navbar-avatar">
+                    <div class="navbar-brand-text">
+                        <span class="navbar-brand-name">Ange Herimanana</span>
+                        <span class="navbar-brand-title">Développeur · HEI L2</span>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-actions">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#vision" class="nav-link">Vision</a></li>
+                    <li><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#parcours" class="nav-link">Parcours</a></li>
+                    <li><a href="#projects" class="nav-link">Projets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
@@ -82,7 +93,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-header-left">
-                    <div class="tag tag-amber"><em>01</em> — À propos</div>
+                    <div class="tag"><em>01</em> — À propos</div>
                     <h2 class="section-title">Qui suis-<span class="hl">je</span> ?</h2>
                 </div>
                 <div class="section-header-right">
@@ -91,11 +102,9 @@
             </div>
             <div class="about-grid">
                 <div class="about-text-content">
-                    <span class="greet">— Bonjour   <span style="font-size:1.4rem;">👋</span></span>
-                    <h3>Je suis <span class="hl">Ange Herimanana</span></h3>
-                    <p><strong>22 ans</strong>, en <strong>L2 à HEI Madagascar</strong>.</p>
-                    <p>Bac 2023 → ITC (bureautique) → Orange Digital Center (Bubble) → HEI.</p>
-                    <p>Objectif : créer des solutions numériques utiles, au service des gens.</p>
+                    <span class="greet">— Bonjour, moi c'est</span>
+                    <h3><span class="hl">Ange Herimanana</span></h3>
+                    <p><strong>22 ans</strong>, étudiant en <strong>L2 à HEI Madagascar</strong>. Après un <strong>Bac Série D</strong> (2023), j'ai suivi une formation <strong>ITC</strong> (bureautique, administration) puis intégré l'<strong>Orange Digital Center</strong> où le no-code <strong>Bubble</strong> a révélé ma passion pour le développement d'applications. Aujourd'hui à HEI, j'approfondis <strong>développement logiciel</strong>, <strong>conception</strong> et <strong>bases de données</strong>. Mon ambition : créer des applications à <strong>impact social</strong> — des outils utiles pour la gestion financière, la santé et le bien-être au quotidien.</p>
                 </div>
                 <div>
                     <div class="about-cards-grid">
@@ -125,11 +134,11 @@
         </div>
     </section>
 
-    <section id="vision" class="parcours" style="background:var(--bg-primary);">
+    <section id="vision" class="parcours">
         <div class="container">
             <div class="section-header">
                 <div class="section-header-left">
-                    <div class="tag tag-amber"><em>02</em> — Vision</div>
+                    <div class="tag"><em>02</em> — Vision</div>
                     <h2 class="section-title">Ma <span class="hl">motivation</span></h2>
                 </div>
                 <div class="section-header-right">
@@ -138,22 +147,18 @@
             </div>
             <div class="about-grid" style="grid-template-columns:1.2fr 0.8fr;">
                 <div class="about-text-content">
-                    <p style="font-size:1rem; color:var(--text-primary); font-weight:500; margin-bottom:16px;">
-                        «&nbsp;L&rsquo;informatique au service des gens.&nbsp;»
+                    <p style="font-size:0.95rem; color:var(--text); font-weight:500; margin-bottom:14px;">
+                        « L'informatique au service des gens. »
                     </p>
-                    <p>Devenir <strong>développeur d&rsquo;applications à impact social</strong> (finances, santé, bien-être).</p>
-                    <p>MyBudgetLocal et FitLife sont nés de cette vision.</p>
-                    <p>Méthode <strong>Pomodoro</strong> pour rester concentré et organisé.</p>
+                    <p>Je veux créer des solutions numériques qui ont du sens — dans les <strong>finances</strong>, la <strong>santé</strong>, le <strong>bien-être</strong>. Des outils simples, accessibles, qui répondent à des vrais besoins.</p>
+                    <p>C'est comme ça que <strong>MyBudgetLocal</strong> (gestion budgétaire) et <strong>FitLife</strong> (coaching santé) sont nés.</p>
+                    <p>Pour avancer, je mise sur la <strong>discipline</strong> et la <strong>concentration</strong> — la méthode <strong>Pomodoro</strong> m'aide à rester organisé au quotidien.</p>
                 </div>
                 <div>
-                    <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:32px; text-align:center;">
-                        <div style="font-size:3rem; margin-bottom:16px; background:var(--gradient-text); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:8px;">Impact Social</h3>
-                        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7;">
-                            Créer des solutions numériques utiles, responsables et centrées sur l’humain.
-                        </p>
+                    <div class="vision-card">
+                        <div class="vision-card-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        <h3>Impact Social</h3>
+                        <p>Créer des solutions numériques utiles, responsables et centrées sur l'humain.</p>
                     </div>
                 </div>
             </div>
@@ -164,7 +169,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-header-left">
-                    <div class="tag tag-amber"><em>03</em> — Compétences</div>
+                    <div class="tag"><em>03</em> — Compétences</div>
                     <h2 class="section-title">Ma <span class="hl">Stack</span></h2>
                 </div>
                 <div class="section-header-right">
@@ -209,7 +214,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-header-left">
-                    <div class="tag tag-amber"><em>04</em> — Parcours</div>
+                    <div class="tag"><em>04</em> — Parcours</div>
                     <h2 class="section-title">Mon <span class="hl">chemin</span></h2>
                 </div>
                 <div class="section-header-right">
@@ -218,30 +223,28 @@
             </div>
             <div class="timeline">
                 <div class="timeline-card">
-                    <div class="year">2025</div>
+                    <div class="year">2026</div>
                     <h4>L2 — HEI Madagascar</h4>
                     <div class="loc"><i class="fa-solid fa-location-dot"></i> Antananarivo</div>
-                    <p>Développement logiciel, conception d&rsquo;applications, posture pro.</p>
+                    <p>Développement logiciel, conception d'applications, posture pro.</p>
                 </div>
                 <div class="timeline-card">
-                    <div class="year">2024</div>
+                    <div class="year">2025</div>
                     <h4>Orange Digital Center</h4>
                     <div class="loc"><i class="fa-solid fa-location-dot"></i> Madagascar</div>
-                    <p>No-code <strong>Bubble</strong> &mdash; conception rapide centrée utilisateur.</p>
+                    <p>No-code <strong>Bubble</strong> — conception rapide centrée utilisateur.</p>
                 </div>
                 <div class="timeline-card">
                     <div class="year">2024</div>
                     <h4>Formation ITC</h4>
                     <div class="loc"><i class="fa-solid fa-location-dot"></i> Madagascar</div>
-                    <p>Bureautique et administration &mdash; organisation, sérieux, responsabilité.</p>
+                    <p>Bureautique et administration — organisation, sérieux, responsabilité.</p>
                 </div>
                 <div class="timeline-card">
                     <div class="year">2023</div>
                     <h4>Baccalauréat Série D</h4>
                     <div class="loc"><i class="fa-solid fa-location-dot"></i> Madagascar</div>
-                    <p>
-                        Obtention du baccalauréat scientifique, avec mention.
-                    </p>
+                    <p>Obtention du baccalauréat scientifique, avec mention.</p>
                 </div>
             </div>
         </div>
@@ -251,7 +254,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-header-left">
-                    <div class="tag tag-amber"><em>05</em> — Projets</div>
+                    <div class="tag"><em>05</em> — Projets</div>
                     <h2 class="section-title">Mes <span class="hl">réalisations</span></h2>
                 </div>
                 <div class="section-header-right">
@@ -261,7 +264,7 @@
             <div class="projects-list">
                 <article class="project-card">
                     <div class="project-card-top">
-                        <h3>MyBudgetLocal <span>💰</span></h3>
+                        <h3>MyBudgetLocal</h3>
                         <span class="badge badge-amber">Application</span>
                     </div>
                     <p class="project-desc">
@@ -283,7 +286,7 @@
                 </article>
                 <article class="project-card">
                     <div class="project-card-top">
-                        <h3>FitLife <span>🏃‍♀️</span></h3>
+                        <h3>FitLife</h3>
                         <span class="badge badge-emerald">Plateforme</span>
                     </div>
                     <p class="project-desc">
@@ -296,7 +299,7 @@
                     </div>
                     <ul class="project-features">
                         <li><i class="fa-solid fa-apple-alt"></i> Conseils nutritionnels</li>
-                        <li><i class="fa-solid fa-heartbeat"></i> Suivi d&rsquo;activités</li>
+                        <li><i class="fa-solid fa-heartbeat"></i> Suivi d'activités</li>
                         <li><i class="fa-solid fa-chart-simple"></i> Suivi des objectifs santé</li>
                     </ul>
                     <a href="https://github.com/Ange-H0610/FitLife.git" target="_blank" class="btn btn-link">
@@ -311,7 +314,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-header-left">
-                    <div class="tag tag-amber"><em>06</em> — Contact</div>
+                    <div class="tag"><em>06</em> — Contact</div>
                     <h2 class="section-title">Discutons <span class="hl">ensemble</span></h2>
                 </div>
                 <div class="section-header-right">
@@ -369,6 +372,7 @@
         </div>
     </footer>
 
+    <script src="./js/theme.js"></script>
     <script src="./js/scroll-animations.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>

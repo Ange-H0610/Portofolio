@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.hero-grid > *').forEach((el, index) => {
         el.classList.add('animation-fadeInUp');
         el.style.opacity = '0';
-        el.style.animationDelay = `${index * 0.12}s`;
+        el.style.animationDelay = `${index * 0.1}s`;
         observer.observe(el);
     });
 
@@ -87,6 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.add('animation-fadeInUp');
         el.style.opacity = '0';
         el.style.animationDelay = `${index * 0.1}s`;
+        observer.observe(el);
+    });
+
+    document.querySelectorAll('.vision-card').forEach((el, index) => {
+        el.classList.add('animation-scaleIn');
+        el.style.opacity = '0';
+        el.style.animationDelay = `${index * 0.15}s`;
         observer.observe(el);
     });
 
